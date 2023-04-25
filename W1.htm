@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shakingTest</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes an1{
+    25%{
+        right:9px;
+    }
+    50%{
+        right:0px;
+    }
+    75%{
+        left:9px;
+    }
+    100%{
+        left:0px;
+    }
+    
+    
+}
+
+.in{
+    animation-name: an1;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    position:relative;
+    /* border: 2px solid aqua; */
+    
+    
+}
+
+</style>
+
+</head>
+<body>
+
+    <input type="text" name="name" id="in1" class="in" placeholder="00311073"/>
+    <button>print</button>
+
+    
+
+    <py-script>
+        element=Element("in1")
+        print(element.value)
+
+    </py-script>
+</body>
+</html>
